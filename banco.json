@@ -1,0 +1,23 @@
+{
+    "1":{
+    	"id":"1",
+        "nome":"Laptop",
+        "valor":"1499.99",
+        "imagem":"https://source.unsplash.com/400x300?laptop",
+        "descricao":"Descrição do Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua."
+    },
+    "2":{
+    	"id":"2",
+        "nome":"Vídeo Game",
+        "valor":"989.99",
+        "imagem":"https://source.unsplash.com/400x300?playstation 4",
+        "descricao":"Descrição do Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua."
+    },
+    "3":{
+    	"id":"3",
+        "nome":"TV",
+        "valor":"499.99",
+        "imagem":"https://source.unsplash.com/400x300?tv",
+        "descricao":"Descrição do Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua."
+    }
+}

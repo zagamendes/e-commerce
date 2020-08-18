@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOJA ONLINE</title>
+
+
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+
+
+    <script src="/__/firebase/init.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.js"></script>
+    <script defer src="js/eventos-index.js"></script>
+    <script src="js/bootstrap-notify.min.js"></script>
+    <script src="js/Notificacao.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/fa/css/all.css">
+    <script
+        src="https://www.paypal.com/sdk/js?currency=BRL&client-id=AXB9umzDhudBkfjiNmILMZbiI5P4GWaF9wEIIfGUljERcOxnnzs8K7DHcQwUhwcwJ9TU9H-30wAssPTZ"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+        </script>
+    <style>
+        .jumbotron {
+            margin-bottom: 0;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        #qtd-carrinho{
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+        }
+        .btn-comprar{
+            padding: 14px;
+        }
+        .btn-add-no-carrinho{
+            padding: 14px;
+        }
+        #qtd-carrinho:hover{
+            color:lightskyblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid navbar-dark default-color">
+        <div class="container">
+            <h2 class="display-4 text-center">Loja Online</h2>
+            <p class="lead text-center">E-commerce usando como forma de pagamento integração com PayPal</p>
+        </div>
+        <div id="qtd-carrinho">
+            <p><span class="fas fa-shopping-cart qtd-carrinho"> 0</span> Finalizar a compra</p>
+        </div>
+
+    </div>
+    
+    <div class="container">
+
+        <div class="row" id="row-produtos">
+        </div>
+        <!-- MODAL PAGAMENTO -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Finalização de Pagamento</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><span
+                                class="fas fa-times"></span> Fechar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
